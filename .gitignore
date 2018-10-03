@@ -1,0 +1,6 @@
+# Dependency directory
+node_modules
+
+# Schema
+lib/graph/schema.graphql
+lib/graph/schema.jso
