@@ -6,8 +6,7 @@ We are looking for clean code, in a readable format. Stlying is not expected but
 
 **Some very basic styling has been added. Obviously radio groups should have a caption and some material design or bootstrap in a responsive grid would be better.**
 
-**The code probably shows that I am not an expert in Relay and Graph QL. I must also confess that I am not a big fan. My first impression is that it adds quite a bit of complexity to the code. I keep investigating new technologies and at the moment I am looking into writing MVC Javascript apps with Redux and React which I find a bit easier. I understand though that it is not as powerful as Relay and would have no problem coding with that Framework instead.
-** 
+**The code probably shows that I am not an expert in Relay and Graph QL. I must also confess that I am not a big fan. My first impression is that it adds quite a bit of complexity to the code. I keep investigating new technologies and at the moment I am looking into writing MVC Javascript apps with Redux and React which I find a bit easier. I understand though that it is not as powerful as Relay and would have no problem coding with that Framework instead.** 
 
 The code should be tested (task 1), and those tests should pass.
 
@@ -20,9 +19,9 @@ The `MapComponent` should be connected by relay, and should accept a `location` 
 **I created an API key but since yours is working and is in the code...**
 
 **I tried to use the react map component and ran into cryptic errors such as:**
-```
-Uncaught (in promise) Error: Did you wrap <GoogleMap> component with withGoogleMap() HOC?
-```
+
+`Uncaught (in promise) Error: Did you wrap <GoogleMap> component with withGoogleMap() HOC?`
+
 **After fiddling with the examples for a while I came to the conclusion that the component is not yet of sufficient quality, at least in term of documentation. It is my opinion that a component that cannot easily be used with a minimal example may not be entirely suited for production.**
 
 ## Getting Started
@@ -48,9 +47,9 @@ here is a basic graph query to input into the graphql.
   }
 }
 ```
-**
-It has been updated to show location and should give the following result:```
-**
+
+**This should give the following result:**
+
 ```
 {
   "data": {
@@ -64,7 +63,7 @@ It has been updated to show location and should give the following result:```
           }
         },
 ...
-
+```
 
 ## The Code
 
@@ -102,6 +101,6 @@ each property has a lat/lng location in the `/lib/graph/utils/properties.js`, fo
 
 They can then be used on the front end, and passed into a component via a relay fragment. This component, should then be able to render a google map with the pin where the property location is. `react-google-maps` (https://github.com/tomchentw/react-google-maps) has already been installed via the package.json.
 
-**The map is shown with an address showing the location:**
+**The map is shown with a marker showing the location:**
 
 ![Map with location](readme/Capture2.PNG "Map with location")
